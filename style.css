@@ -1,0 +1,103 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Root  */
+:root{
+    /* COlors  */
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --gray-700: hsl(0, 0%, 20%);
+    --gray-800: hsl(0, 0%, 12%);
+    --gray-900: hsl(0, 0%, 8%);
+
+    /* Typography  */
+    --body-font: 14px;
+    --heading-text: 1.6rem;
+    --fw-4: 400;
+    --fw-6: 600;
+    --fw-7: 700;
+}
+
+/* Reset  */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: var(--white-color);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-size: var(--body-font);
+    color: var(--white-color);
+    font-weight: var(--fw-4);
+    background: var(--gray-900);
+    text-align: center;
+}
+
+/* Main Styling here  */
+.social_wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+.container{
+    background: var(--gray-800);
+    width: 24em;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.container .user_name{
+    font-size: var(--heading-text);
+    text-align: center;
+    font-weight: var(--fw-7);
+    line-height: 1.6rem;
+    margin: 20px 0;
+}
+.container .address_info{
+    font-size: .825rem;
+    color: var(--green-color);
+    font-weight: var(--fw-6);
+    margin-top: -10px;
+}
+.container .user_dec{
+    font-size: .825rem;
+    color: var(--white-color);
+    margin: 20px 0;
+}
+.social_links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.list_items{
+    display: block;
+    width: 100%;
+    background: var(--gray-700);
+    padding: 14px 60px;
+    font-size: .9rem;
+    font-weight: var(--fw-6);
+    border-radius: 6px;
+    transition: .3s;
+}
+.list_items:hover{
+    background: var(--green-color);
+    color: var(--gray-900);
+}
